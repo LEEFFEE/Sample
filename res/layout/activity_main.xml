@@ -1,17 +1,19 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.huafei.sample.MainActivity" >
+    android:orientation="vertical" >
 
-    <cn.huafei.widget.BottomTab
-        android:id="@+id/rg_tabs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bottom_tab_bg"
-        android:gravity="center"
-        android:orientation="horizontal" >
-      
-    </cn.huafei.widget.BottomTab>
+    <FrameLayout
+        android:id="@+id/fl_tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-</RelativeLayout>
+    <cn.huafei.widget.BottomTabHost
+        android:background="@android:color/darker_gray"
+        android:id="@+id/bottomTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </cn.huafei.widget.BottomTabHost>
+
+</LinearLayout>
