@@ -3,17 +3,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <FrameLayout
-        android:id="@+id/fl_tabcontent"
+    <cn.huafei.widget.GuideView
+        android:id="@+id/guideView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <cn.huafei.widget.BottomTabHost
-        android:background="@android:color/darker_gray"
-        android:id="@+id/bottomTabHost"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </cn.huafei.widget.BottomTabHost>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
